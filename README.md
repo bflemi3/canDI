@@ -1,4 +1,4 @@
-# candi
+# canDI
 Inversion of control javascript library
 
 ## candi.provider
