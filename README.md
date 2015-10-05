@@ -23,9 +23,9 @@ var cheese = candi.provider.singleton('cheese', function(bread) {
 
 **Instances** 
 ```
-candi.provider.singleton('infoService', function(dependency1, otherArg1, otherArg2) { 
+candi.provider.singleton('infoService', function(ajax) { 
   return {
-    getTopSpeed: function(maker, model, year) { ... }
+    getTopSpeed: function(maker, model, year) { // use ajax to retrieve from restful service }
   };
 });
 
