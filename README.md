@@ -19,7 +19,12 @@ var cheese = candi.provider.singleton('cheese', function(dependency1) { ... });
 ```
 candi.provider.instance('house', function(dependency1, otherArg1, otherArg2) { ... });
 // OR
-var Car = candi.provider.instance('Car', function(dependency1, maker, model) { ... });
+var Car = candi.provider.instance('Car', function(infoService, maker, model, year) {
+  this.maker = maker;
+  this.model = model;
+  this.year = year
+  this.topSpeed = infoService.getTopSpeed(maker, model, year);
+});
 
 var myCar = new Car('honda', 'civic');
 ```
