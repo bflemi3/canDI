@@ -2,9 +2,7 @@
 Inversion of control and object creation javascript library
 
 ## candi.provider
-`provider` is the main interface used create objects, and implicitly define and inject dependencies into an object. 
-
-`provider` gives you the ability to create:
+`provider` is the main interface used create objects, and implicitly define and inject dependencies into an object. It gives you the ability to create:
 
 **Singletons** `candi.provider.singleton(String name, Function factory, Object scope)`
 
