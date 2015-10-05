@@ -4,7 +4,8 @@ Inversion of control and object creation javascript library
 ## candi.provider
 `provider` is the main interface used to create objects, and implicitly define and inject dependencies into an object. It gives you the ability to create and automatically register:
 
-###Singletons `candi.provider.singleton(String name, Function factory, Object scope)`
+###Singletons 
+`candi.provider.singleton(String name, Function factory, Object scope)`
 
 `singleton` will create and return the newly created singleton with resolved dependencies injected and ready to use. It will also automatically define your new singleton as a new dependency that can then be referenced and injected into other objects created with `provider`.
 
