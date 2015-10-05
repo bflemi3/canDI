@@ -22,6 +22,8 @@ var cheese = candi.provider.singleton('cheese', function(bread) {
 ```
 
 **Instances** 
+
+Example:
 ```
 candi.provider.singleton('infoService', function(ajax) { 
   return {
