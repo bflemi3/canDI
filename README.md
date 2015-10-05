@@ -2,9 +2,9 @@
 Inversion of control and object creation javascript library
 
 ## candi.provider
-Provider is the main interface used to implicitly define and inject dependencies into an object. 
+`provider` is the main interface used to implicitly define and inject dependencies into an object. 
 
-Provider gives you the ability to create:
+`provider` gives you the ability to create:
 
 **Singletons** 
 ```
