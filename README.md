@@ -6,7 +6,7 @@ Inversion of control and object creation javascript library
 
 `provider` gives you the ability to create:
 
-**Singletons** 
+**Singletons** *returns object*
 ```
 candi.provider.singleton('mySingleton', function(dependency1, dependency2) { ... });
 ```
