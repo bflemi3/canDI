@@ -10,7 +10,9 @@ Inversion of control and object creation javascript library
 
 Example:
 ```
-candi.provider.singleton('mySingleton', function(dependency1, dependency2) { ... });
+candi.provider.singleton('mySingleton1', function(dependency1, dependency2) { ... });
+// OR
+var cheese = candi.provider.singleton('cheese', function(dependency1) { ... });
 ```
 
 **Instances** 
