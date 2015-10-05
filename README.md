@@ -36,7 +36,7 @@ var Car = candi.provider.instance('Car', function(infoService, maker, model, yea
   this.topSpeed = infoService.getTopSpeed(maker, model, year);
 });
 
-var myCar = new Car('honda', 'civic');
+var myCar = new Car('honda', 'civic', 2004);
 ```
 **Variables** 
 ```
