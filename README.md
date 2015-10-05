@@ -6,7 +6,7 @@ Inversion of control and object creation javascript library
 
 **Singletons** `candi.provider.singleton(String name, Function factory, Object scope)`
 
-`singleton` will create and return the newly created singleton with resolved dependencies injected and ready to use.
+`singleton` will create and return the newly created singleton with resolved dependencies injected and ready to use. It will also automatically define your new singleton as a new dependency that can then be injected into other objects created with `provier`.
 
 Example:
 ```
