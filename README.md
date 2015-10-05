@@ -1,5 +1,5 @@
 # canDI
-Inversion of control javascript library
+Inversion of control and object creation javascript library
 
 ## candi.provider
 Provider is the main interface used to implicitly define and inject dependencies into an object. 
