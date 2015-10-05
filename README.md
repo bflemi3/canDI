@@ -6,13 +6,15 @@ Inversion of control and object creation javascript library
 
 **Singletons** `candi.provider.singleton(String name, Function factory, Object scope)`
 
-`singleton` will create and return the newly created singleton with resolved dependencies injected and ready to use. It will also automatically define your new singleton as a new dependency that can then be injected into other objects created with `provier`.
+`singleton` will create and return the newly created singleton with resolved dependencies injected and ready to use. It will also automatically define your new singleton as a new dependency that can then be referenced and injected into other objects created with `provider`.
 
 Example:
 ```
 candi.provider.singleton('bread', function(dependency1, dependency2) { ... });
-// OR
-var cheese = candi.provider.singleton('cheese', function(dependency1) { ... });
+
+var cheese = candi.provider.singleton('cheese', function(bread) { 
+  bread.add('butter');
+});
 ```
 
 **Instances** 
