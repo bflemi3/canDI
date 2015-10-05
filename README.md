@@ -23,8 +23,12 @@ var cheese = candi.provider.singleton('cheese', function(bread) {
 
 **Instances** 
 ```
-candi.provider.instance('house', function(dependency1, otherArg1, otherArg2) { ... });
-// OR
+candi.provider.singleton('infoService', function(dependency1, otherArg1, otherArg2) { 
+  return {
+    getTopSpeed: function(maker, model, year) { ... }
+  };
+});
+
 var Car = candi.provider.instance('Car', function(infoService, maker, model, year) {
   this.maker = maker;
   this.model = model;
