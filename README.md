@@ -6,7 +6,7 @@ Provider is the main interface used to implicitly define and inject dependencies
 
 Provider gives you the ability to create:
 
-**Singeltons** 
+**Singletons** 
 ```
 candi.provider.singleton('mySingleton', function(dependency1, dependency2) { ... });
 ```
