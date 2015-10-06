@@ -1,5 +1,5 @@
 # canDI
-Inversion of control and object creation javascript library
+A simple dependency injection and object creation javascript library
 
 ## candi.provider
 `provider` is the main interface used to create objects, and implicitly define and inject dependencies into an object. It gives you the ability to create objects and automatically register them as dependencies to be injected into other objects created with `provider`.
