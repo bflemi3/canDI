@@ -14,14 +14,21 @@ Inversion of control and object creation javascript library
 
 Example:
 ```
-candi.provider.singleton('bread', function(dependency1, dependency2) { 
+candi.provider.singleton('util', function() { 
   return {
-    add: function(thing) { return dependency1.add(thing); }
+    isString: function(obj) { return typeof obj === 'string'; }
   };
 });
 
-var cheese = candi.provider.singleton('cheese', function(bread) { 
-  bread.add('butter');
+// singleton also returns your newly create singleton object, dependencies injected
+// and ready to use.
+var robot = candi.provider.singleton('robot', function(util) { 
+  return {
+    greet: function(name) {
+      if(!util.isString(name)) throw new Error('Invalid argument. 'name' must be a string.);
+      return 'hello ' + name + '!!';
+    }
+  };
 });
 ```
 
