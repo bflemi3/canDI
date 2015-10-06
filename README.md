@@ -58,6 +58,9 @@ var Car = candi.provider.instance('Car', function(infoService, maker, model, yea
 var myCar = new Car('honda', 'civic', 2004);
 ```
 ###Variables
+`candi.provider.variable(String name, Object value)`
+
+Example:
 ```
 candi.provider.variable('myVariable', 'hello');
 ```
