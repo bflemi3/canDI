@@ -7,7 +7,7 @@ A simple dependency injection and object creation javascript library (with no de
 You can create...
 
 ###Singletons 
-`candi.provider.singleton(String name, Function factory, Object scope)`
+`candi.provider.singleton(String:name, Function:factory, Object:scope)`
 - name: The name of the newly created singleton.
 - factory: The function that will be used to create your singleton.
 - scope: The value of `this` within the factory. If `undefined` then scope will be a new object `{}`.
@@ -35,7 +35,7 @@ var robot = candi.provider.singleton('robot', function(_util) {
 ```
 
 ###Instances 
-`candi.provider.instance(String name, Function factory, Object scope)`
+`candi.provider.instance(String:name, Function:factory, Object:scope)`
 - name: The name of the newly created singleton.
 - factory: Your instance constructor.
 - scope: The value of `this` within the factory. If `undefined` then scope will be a new object `{}`.
@@ -60,7 +60,7 @@ var Car = candi.provider.instance('Car', function(infoService, maker, model, yea
 var myCar = new Car('honda', 'civic', 2004);
 ```
 ###Variables
-`candi.provider.variable(String name, Object value)`
+`candi.provider.variable(String:name, Object:value)`
 
 Example:
 ```
