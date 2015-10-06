@@ -37,7 +37,7 @@ Example:
 ```
 candi.provider.singleton('infoService', function(ajax) { 
   return {
-    getTopSpeed: function(maker, model, year) { // use ajax dependency to retrieve from restful service }
+    getTopSpeed: function(maker, model, year) { return ajax.get('topspeed', maker, model, year); }
   };
 });
 
