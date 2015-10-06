@@ -65,4 +65,8 @@ var myCar = new Car('honda', 'civic', 2004);
 Example:
 ```
 candi.provider.variable('myVariable', 'hello');
+
+// OR
+
+candi.provider.variable('days', ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']);
 ```
