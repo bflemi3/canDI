@@ -14,7 +14,7 @@ Inversion of control and object creation javascript library
 
 Example:
 ```
-candi.provider.singleton('util', function() { 
+candi.provider.singleton('_util', function() { 
   return {
     isString: function(obj) { return typeof obj === 'string'; }
   };
@@ -22,10 +22,10 @@ candi.provider.singleton('util', function() {
 
 // singleton also returns your newly create singleton object, dependencies injected
 // and ready to use.
-var robot = candi.provider.singleton('robot', function(util) { 
+var robot = candi.provider.singleton('robot', function(_util) { 
   return {
     greet: function(name) {
-      if(!util.isString(name)) throw new Error('Invalid argument. 'name' must be a string.);
+      if(!_util.isString(name)) throw new Error('Invalid argument. 'name' must be a string.);
       return 'hello ' + name + '!!';
     }
   };
