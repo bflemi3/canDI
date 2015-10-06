@@ -35,7 +35,7 @@ var robot = candi.provider.singleton('robot', function(_util) {
 ```
 
 ###Instances 
-`candi.instance(String name, Function factory, Object scope)`
+`candi.provider.instance(String name, Function factory, Object scope)`
 - name: The name of the newly created singleton.
 - factory: Your instance constructor.
 - scope: The value of `this` within the factory. If `undefined` then scope will be a new object `{}`.
