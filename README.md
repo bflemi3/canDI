@@ -25,7 +25,11 @@ var cheese = candi.provider.singleton('cheese', function(bread) {
 });
 ```
 
-**Instances** 
+###Instances 
+`candi.instance(String name, Function factory, Object scope)`
+- name: The name of the newly created singleton.
+- factory: The function that will be used to create the singleton.
+- scope: The value of `this` within the factory. If `undefined` then scope will be a new object `{}`.
 
 Example:
 ```
@@ -44,7 +48,7 @@ var Car = candi.provider.instance('Car', function(infoService, maker, model, yea
 
 var myCar = new Car('honda', 'civic', 2004);
 ```
-**Variables** 
+###Variables
 ```
 candi.provider.variable('myVariable', 'hello');
 ```
