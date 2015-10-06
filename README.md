@@ -2,7 +2,7 @@
 A simple dependency injection and object creation javascript library (with no dependencies!!)
 
 ## candi.provider
-`provider` is the main interface used to create objects, and implicitly define and inject dependencies into an object. In addition to object creation, it automatically registers them as dependencies to be injected into other objects created with `provider`.
+`provider` is the main interface used to create objects, and implicitly define and inject dependencies into an object. It also automatically registers your objects as dependencies to be injected into other objects created with `provider`.
 
 You can create...
 
