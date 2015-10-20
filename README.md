@@ -1,3 +1,4 @@
+*draft*
 # canDI
 A simple dependency injection and object creation javascript library (with no dependencies!!)
 
