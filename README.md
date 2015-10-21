@@ -1,4 +1,4 @@
-*draft - more features are available I just need to update the documentation*
+*draft - more features are available I just need to find time to update the documentation. I do this for fun :)*
 # canDI
 A simple dependency injection and object creation javascript library (with no dependencies!!)
 
