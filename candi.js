@@ -146,7 +146,7 @@
 
 				return {
 					define: function (name, dependency) {
-						// let's get all the argument names that we'll need to inject at invocation
+						// let's make sure the dependency doesn't exist
 						assert(name, false);
 
 						// now return our new dependency
